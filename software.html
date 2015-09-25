@@ -41,13 +41,25 @@
 <p><img src="images/deviceManager.png" alt="Device manager" width="796"></p>
 
 <h3><a id="Installing_the_drivers_Windows_8)" class="anchor" href="#Installing_the_drivers_Windows_8" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installing the drivers under Windows&#174; 8 or newer</h3>
-<p>Comming soon...</p>
+<p>Coming soon...</p>
 
 <h3><a id="robot_calibration" class="anchor" href="#robot_calibration" aria-hidden="true"><span class="octicon octicon-link"></span></a>Robot calibration</h3>
 <p>In order to get AREobot properly working it's <b>very important to calibrate its motors and its line sensors</b>. Also, everytime that you change the surface where the robot is going to move over, doing again the motor calibration may be necessary (only if you note that your robot is not moving nicely.)</p>
 <p>To calibrate the robot just go to miniBloq's menu <b>View->Properties</b> (or press <b>Alt+p</b>.) Once the <b>Properties</b> window is open, please select the <b>AERobot</b> tab:</p>
 <p><img src="images/miniBloq_calibration1.png" alt="calibration screen" width="381"></p>
-<p>##</p>
+<p>The first thing to be calibrated is the <b>Forward movement</b> of the robot. In order to do so, please follow this procedure:</p>
+<ol>
+<li>Connect the robot to the USB port.</li>
+<li>Press the <b>Forward Clear</b> button. This will upload the clear program to the robot, so you should see the following message after successful uploading:</li>
+<p><img src="images/calibration_forwardClear.png" alt="robot picker" width="626"></p>
+If you don't see this screen, try reseting the robot and pressing the <b>Forward Clear</b>button again (Note: in some computers it could be necessary to press the button more than one or two times.)
+<li>Unplug the robot from the USB port. You will see the RGB LED in green color.</li>
+<li>Plug the robot again to the USB port.</li>
+<li>Now press the <b>Forward</b> button until you get the successful upload message on the screen.</li>
+<li>Unplug the robot and put it over the surface where you want to calibrate it. If it does not start to move, press its reset button.</li>
+<li>The robot will start moving slowly, and probably it will not advance straight. The whole idea about calibration is to get it moving as straight and as fast as possible on the given surface. In order to do that, you will need to indicate if one of the motors needs to move a bit faster. This can be done by activating the distance sensor on the side of the motor that you want to accelerate. Each time you activate one of the sensors, you will see how the robot accelerates the motor on that sice, and also the LED will blink so you know that the sensor was activated. The following video shows the procdure clearer:</li>
+</ol>
+<p>Videos, and more information about calibration coming soon...</p>
 
 <h3><a id="programing_the_robot" class="anchor" href="#programing_the_robot" aria-hidden="true"><span class="octicon octicon-link"></span></a>Programing the robot</h3>
 <p>One of the simplest tasks that we can make AERobot to do is just moving. So let's program the robot to rotate clockwise indefinetely, which requires just one instruction (or <b>block</b> in miniBloq.) Please open miniBloq and from the actions picker on the right of the screen, click on the block with the robot icon:</p>
