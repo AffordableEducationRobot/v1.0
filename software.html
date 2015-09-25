@@ -26,20 +26,36 @@
 
 <h3><a id="getting_started_with_the_software" class="anchor" href="#getting_started_with_the_software" aria-hidden="true"><span class="octicon octicon-link"></span></a>Getting started with the software</h3>
 <p>AERobot is a programmable robot. This means that you can create or own apps for it with, using a graphical programming environment called miniBloq. You can download the last version of miniBloq from <a href="http://blog.minibloq.org/p/download.html">this page</a>.</p>
-<p>Once you have downloaded it, just run the installer (Windows&#174; is currently required; we're working to extend to other operating systems.)</p>
+<p>Once you have downloaded it, just run the installer <b>miniBloq.v0.83.exe</b> (Windows&#174; is currently required; we're working to extend to other operating systems.)</p>
 
 <h3><a id="Installing_the_drivers_Windows_7)" class="anchor" href="#Installing_the_drivers_Windows_7" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installing the drivers under Windows&#174; 7</h3>
-<p>##</p>
+<p>AERobot's drivers are deployed with miniBloq. So you don't need to download aditional software. Just press the button <b>Open folder with drivers</b> on the Hardware window:</p>
+<p><img src="images/miniBloq_drivers0.png" alt="drivers" width="393"></p>
+<p>There you will find folders <b>win7</b> and <b>win8</b>, where you can select the drivers for your current operating system. Now please connect your robot to any USB port and open the <b>win7</b> folder and then the <b>bin</b> folder inside it (please also note that if you have more than one robot, only one can be plugged on the same computer.) Now run the <b>inf-wizard.exe</b> program:</p>
+<p><img src="images/usbWizard.png" alt="drivers" width="472"></p>
+<p>With the robot connected, press the <b>Next</b> button and then select the device that says <b>USBasp</b> on its <b>Description</b> field:</p>
+<p><img src="images/usbWizard1.png" alt="drivers" width="473"></p>
+<p>Press <b>Next</b> again twice and the wizard will ask you to save the automatically generated .inf file. Just save it anywhere on your computer and press the <b>Instal Now...</b> button:</p>
+<p><img src="images/usbWizard2.png" alt="drivers" width="473"></p>
 
-<h3><a id="Installing_the_drivers_Windows_8)" class="anchor" href="#Installing_the_drivers_Windows_8" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installing the drivers under Windows&#174; 8 or superior</h3>
+<h3><a id="Installing_the_drivers_Windows_8)" class="anchor" href="#Installing_the_drivers_Windows_8" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installing the drivers under Windows&#174; 8 or newer</h3>
 <p>##</p>
 
 <h3><a id="robot_calibration" class="anchor" href="#robot_calibration" aria-hidden="true"><span class="octicon octicon-link"></span></a>Robot calibration</h3>
 <p>##</p>
-
-<h3><a id="programing_the_robot" class="anchor" href="#programing_the_robot" aria-hidden="true"><span class="octicon octicon-link"></span></a>Programing the robot</h3>
+<p><img src="images/miniBloq_calibration1.png" alt="calibration screen" width="381"></p>
 <p>##</p>
 
+<h3><a id="programing_the_robot" class="anchor" href="#programing_the_robot" aria-hidden="true"><span class="octicon octicon-link"></span></a>Programing the robot</h3>
+<p>One of the simplest tasks that we can make AERobot to do is just moving. So let's program the robot to rotate clockwise indefinetely, which requires just one instruction (or <b>block</b> in miniBloq.) Please open miniBloq and from the actions picker on the right of the screen, click on the block with the robot icon:</p>
+<p><img src="images/actions_picker.png" alt="actions picker" width="157"></p>
+<p>Now, on the block that has been created, just click on the red button to select the action to be done by the robot. There click on one of the rotation actions:</p>
+<p><img src="images/robot_picker.png" alt="robot picker" width="582"></p>
+<p>Once you have your program ready, and with the robot plugged in the USB port, just press the Run button (green arrow on the top toolbox) or the <b>Ctrl+U</b> keys. A black message window will pop-up on the bottom of the screen. If the robot was sucessuflly programed, you will see something like this:</p>
+<p><img src="images/minibloq_messages_ok.png" alt="minibloq messages ok" width="582"></p>
+<p>If you see red text instead, or any error message, try pressing the robot's reset button while keeping the robot plugged into the USB port, and try again. Sometimes this operation may take 2 or 3 tries.</p>
+<p>Once miniBloq tells you that the robot has been successfully programmed, unplug the robot, flip it so its acrylic part touches the table and see how it moves. If it does not start to move, just press it's reset button. It's worth noting that everytime that a program runs on AERobot, it first <b>blinks 3 times its RGB LED in blue color</b>.</p>
+  
 <h3><a id="activities" class="anchor" href="#activities" aria-hidden="true"><span class="octicon octicon-link"></span></a>Activities</h3>
 <p>miniBloq is deployed with a bunch of programing examples for AERobot. Please visit <a href="activities.html">the Activities page</a> to find step by step explanations about them.</p>
         
