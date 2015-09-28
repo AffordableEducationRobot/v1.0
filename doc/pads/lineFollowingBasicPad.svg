@@ -29,8 +29,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.35"
-     inkscape:cx="236.42857"
-     inkscape:cy="520"
+     inkscape:cx="-3.5714286"
+     inkscape:cy="634.28571"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -47,7 +47,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -56,17 +56,17 @@
      inkscape:groupmode="layer"
      id="layer1">
     <g
-       id="g3340"
+       id="g3338"
        inkscape:export-filename="/Users/julian/projects/Harvard/Wyss/AERobot/internal/doc/lineFollowingBasicPad.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90">
+       inkscape:export-xdpi="85.699997"
+       inkscape:export-ydpi="85.699997">
       <ellipse
          ry="382.85715"
          rx="264.28571"
          cy="527.72955"
          cx="368.61737"
          id="path4136"
-         style="opacity:1;fill:none;fill-opacity:1;stroke:#4d4d4d;stroke-width:35.43307114;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+         style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:35.43307114;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
       <rect
          y="31.666544"
          x="14.286618"
