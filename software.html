@@ -22,74 +22,98 @@
 
     <section class="main-content">
 
-<div style="text-align:center;">
+<!-- <div style="text-align:center;"> -->
 
-<h3><a id="getting_started_with_the_software" class="anchor" href="#getting_started_with_the_software" aria-hidden="true"><span class="octicon octicon-link"></span></a>Getting started with the software</h3>
-<p>AERobot is a programmable robot. This means that you can create or own apps for it with, using a graphical programming environment called miniBloq. You can download the last version of miniBloq from <a href="http://blog.minibloq.org/p/download.html">this page</a>.</p>
-<p>Once you have downloaded it, just run the installer <b>miniBloq.v0.83.exe</b> (Windows&#174; is currently required; we're working to extend to other operating systems.)</p>
+<h3 style="text-align:center;">Overview</h3>
 
-<h3><a id="Installing_the_drivers_Windows_7)" class="anchor" href="#Installing_the_drivers_Windows_7" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installing the drivers under Windows&#174; 7</h3>
-<p>AERobot's drivers are deployed with miniBloq. So you don't need to download aditional software. Just press the button <b>Open folder with drivers</b> on the Hardware window:</p>
-<p><img src="images/miniBloq_drivers0.png" alt="Drivers" width="393"></p>
-<p>There you will find folders <b>win7</b> and <b>win8</b>, where you can select the drivers for your current operating system. Now please connect your robot to any USB port and open the <b>win7</b> folder and then the <b>bin</b> folder inside it (please also note that if you have more than one robot, only one can be plugged on the same computer.) Now run the <b>inf-wizard.exe</b> program:</p>
-<p><img src="images/usbWizard.png" alt="Drivers" width="472"></p>
-<p>With the robot connected, press the <b>Next</b> button and then select the device that says <b>USBasp</b> on its <b>Description</b> field:</p>
-<p><img src="images/usbWizard1.png" alt="Drivers" width="473"></p>
-<p>Press <b>Next</b> again twice and the wizard will ask you to save the automatically generated .inf file. Just save it anywhere on your computer and press the <b>Instal Now...</b> button:</p>
-<p><img src="images/usbWizard2.png" alt="Drivers" width="473"></p>
-<p>If you want to be sure that your robot is recognized by the operating system, you can always go to <b>Control Panel->System</b> and there to the <b>Device Manager</b> (on the upper left corner of the screen). Under the <b>libusb-win32 devices</b> category, you should see the <b>USBasp</b> entry, without any exlamation mark or yellow sign there:</p>
-<p><img src="images/deviceManager.png" alt="Device manager" width="796"></p>
+<p>This page describes how to:</p>
+<ol><li><a href="#download">download AERobot software</a> and <a href="#drivers">install the drivers</a>;</li>
+<li><a href="#calibrate_motors">calibrate the robot's motors</a> and its <a href="#calibrate_sensors">line sensors</a>;</li>
+<li><a href="#program">program the robot</a> using the graphical programming environment <a href="http://minibloq.org">miniBloq</a>.</li></ol>
 
-<h3><a id="Installing_the_drivers_Windows_8)" class="anchor" href="#Installing_the_drivers_Windows_8" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installing the drivers under Windows&#174; 8 or newer</h3>
-<p>Coming soon...</p>
+<h3 style="text-align:center;"><a id="getting_started_with_the_software" class="anchor" href="#getting_started_with_the_software" aria-hidden="true"><span class="octicon octicon-link"></span></a>Downloading and installing the software<a name="download" id="download"></a></h3>
 
-<h3><a id="robot_calibration" class="anchor" href="#robot_calibration" aria-hidden="true"><span class="octicon octicon-link"></span></a>Robot calibration</h3>
-<p>In order to get AREobot properly working it's <b>very important to calibrate its motors and its line sensors</b>. Also, everytime that you change the surface where the robot is going to move over, doing again the motor calibration may be necessary (only if you note that your robot is not moving nicely.)</p>
-<p>To calibrate the robot just go to miniBloq's menu <b>View->Properties</b> (or press <b>Alt+p</b>.) Once the <b>Properties</b> window is open, please select the <b>AERobot</b> tab:</p>
-<p><img src="images/miniBloq_calibration1.png" alt="calibration screen" width="381"></p>
-<p>The first thing to be calibrated is the <b>Forward movement</b> of the robot. In order to do so, please follow this procedure:</p>
+<p>
+<!-- AERobot is a programmable robot. This means that you can create or own apps for it with, using a graphical programming environment called miniBloq. You can download the last version of miniBloq from <a href="http://blog.minibloq.org/p/download.html">this page</a>.</p>
+<p>Once you have downloaded it, just run the installer <b>miniBloq.v0.83.exe</b> (Windows&#174; is currently required; we're working to extend to other operating systems.)</p> -->
+Visit <a href="http://blog.minibloq.org/p/download.html">this page</a> to get the latest version of miniBloq, an open-source graphical programming environment that supports AERobot along with other robots. <i>(Windows is currently required; we're working to extend to other operating systems.)</i> The installation package (currently miniBloq.v0.83.exe) is a single file containing everything you'll need; run it and follow the on-screen instructions to install the software on your computer.</p>
+
+<h3 style="text-align:center;"><a id="Installing_the_drivers_Windows_7)" class="anchor" href="#Installing_the_drivers_Windows_7" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installing the drivers<a name="drivers" id="drivers"></a></h3>
+
+<p>Plug your robot into any USB port (note that if you have more than one robot, only one should be plugged into the same computer at one time).</p>
+<p>Run miniBloq, look at the Hardware window, and press the button marked <b>Open folder with drivers</b>:</p>
+<p style="text-align:center;"><img src="images/miniBloq_drivers0.png" alt="Drivers" width="393"></p>
+<p>A window will open containing folders named <b>calibrate</b>, <b>win7</b>, and <b>win8</b>.</p>
+<p>If you're running Windows 7, continue with the instructions <a href="win7.html">here</a>. If you're running Windows 8 or 10, continue with the instructions <a href="win8.html">here</a>.</p>
+
+<h3 style="text-align:center;"><a id="robot_calibration" class="anchor" href="#robot_calibration" aria-hidden="true"><span class="octicon octicon-link"></span></a>Calibrating the motors<a name="calibrate_motors" id="calibrate_motors"></a></h3>
+
+<p>AERobot uses vibration motors rather than wheels to move around, sliding across a surface like a cell phone set to vibrate mode. The robot's movement depends on the speed and direction of spin of each of the two motors, and on the surface it's moving on. As a result, the motors need to be calibrated in order to make it move and turn effectively.</p>
+
+<p>Calibrating the motors is <b>essential</b> to getting AERobot to move properly. Perform this procedure any time the robot's not moving as you expect. This may happen, for instance, when you move the robot to a new surface. (Note that because of this movement by sliding, the robot may not be able to move on all surfaces. For best results, operate it on a hard, flat surface, like a table (no tablecloth) or floor (no carpet!). Also, when the battery gets low, the motor performance will change, and the robot will begin to act as if it were badly calibrated; it's best to both calibrate and operate the robot with a well-charged battery.)</p>
+
+<p>To calibrate the robot, from within miniBloq, go to the menu item <b>View -> Properties</b> (or press <b>Alt-P</b>.) Once the <b>Properties</b> window is open, select the <b>AERobot</b> tab:</p>
+<p style="text-align:center;"><img src="images/miniBloq_calibration1.png" alt="calibration screen" width="381"></p>
+
+<p>The miniBloq programming interface lets you command the robot to move in four ways -- forward, backward, turn clockwise, turn counterclockwise -- and the calibration interface lets you set the motor speeds for each of those four commands so that it results in the corresponding type of movement. The following walks through the calibration procedure for Forward movement; the other three work the same way.</p>
 <ol>
 <li>Connect the robot to the USB port.</li>
-<li>Press the <b>Forward Clear</b> button. This will upload the clear program to the robot, so you should see the following message after successful uploading:</li>
-<p><img src="images/calibration_forwardClear.png" alt="robot picker" width="626"></p>
-If you don't see this screen, try reseting the robot and pressing the <b>Forward Clear</b>button again (Note: in some computers it could be necessary to press the button more than one or two times.)
-<li>Unplug the robot from the USB port. You will see the RGB LED in green color.</li>
-<li>Plug the robot again to the USB port.</li>
-<li>Now press the <b>Forward</b> button until you get the successful upload message on the screen.</li>
+<li>Press the <b>Forward Clear</b> button. In the Messages window at the bottom, you should see the following message:</li>
+<p style="text-align:center;"><img src="images/calibration_forwardClear.png" alt="robot picker" width="626"></p>
+<p>If you don't see this screen, try pressing the robot's power button and pressing the <b>Forward Clear</b> button again. (N.B. It might take a few tries. An upcoming software patch will fix this issue.)</p>
+<li>Unplug the robot from the USB port. You will see the LED light up green.</li>
+<li>Plug the robot back in to the USB port.</li>
+<li>Press the <b>Forward</b> button and look for the successful upload message in the Messages window. (Again, it might take a few tries.)</li>
 <li>Unplug the robot and put it over the surface where you want to calibrate it. If it does not start to move, press its reset button.</li>
-<li>The robot will start moving slowly, and probably it will not advance straight. The whole idea about calibration is to get it moving as straight and as fast as possible on the given surface. In order to do that, you will need to indicate if one of the motors needs to move a bit faster. This can be done by activating the distance sensor on the side of the motor that you want to accelerate. Each time you activate one of the sensors, you will see how the robot accelerates the motor on that sice, and also the LED will blink so you know that the sensor was activated. The following video shows the procdure clearer:</li>
-</ol>
-<p>Videos, and more information about calibration coming soon...</p>
-
-<h3><a id="programing_the_robot" class="anchor" href="#programing_the_robot" aria-hidden="true"><span class="octicon octicon-link"></span></a>Programing the robot</h3>
-<p>One of the simplest tasks that we can make AERobot to do is just moving. So let's program the robot to rotate clockwise indefinetely, which requires just one instruction (or <b>block</b> in miniBloq.) Please open miniBloq and from the actions picker on the right of the screen, click on the block with the robot icon:</p>
-<p><img src="images/actions_picker.png" alt="actions picker" width="157"></p>
-<p>Now, on the block that has been created, just click on the red button to select the action to be done by the robot. There click on one of the rotation actions:</p>
-<p><img src="images/robot_picker.png" alt="robot picker" width="582"></p>
-<p>Once you have your program ready, and with the robot plugged in the USB port, just press the Run button (green arrow on the top toolbox) or the <b>Ctrl+U</b> keys. A black message window will pop-up on the bottom of the screen. If the robot was sucessuflly programed, you will see something like this:</p>
-<p><img src="images/minibloq_messages_ok.png" alt="minibloq messages ok" width="582"></p>
-<p>If you see red text instead, or any error message, try pressing the robot's reset button while keeping the robot plugged into the USB port, and try again. Sometimes this operation may take 2 or 3 tries.</p>
-<p>Once miniBloq tells you that the robot has been successfully programmed, unplug the robot, flip it so its acrylic part touches the table and see how it moves. If it does not start to move, just press it's reset button. It's worth noting that everytime that a program runs on AERobot, it first <b>blinks 3 times its RGB LED in blue color</b>.</p>
-  
-<h3><a id="activities" class="anchor" href="#activities" aria-hidden="true"><span class="octicon octicon-link"></span></a>Activities</h3>
-<p>miniBloq is deployed with a bunch of programing examples for AERobot. Please visit <a href="activities.html">the Activities page</a> to find step by step explanations about them.</p>
-        
-<h3><a id="using_miniBloq" class="anchor" href="#using_miniBloq" aria-hidden="true"><span class="octicon octicon-link"></span></a>Using miniBloq</h3>
-<p>To learn more about how to use miniBloq, please visit miniBloq's <a href="http://blog.minibloq.org/p/documentation.html">documentation page</a> at <a href="http://minibloq.org">miniBloq.org</a> page.</p>
-
-<!--
-<p>On this page, you can learn about downloading and installing the software for AERobot, calibrating the sensors and motors, and programming the robot.</p>
-
-<h3>Setting up</h3>
-
-<p>Visit the <a href="http://blog.minibloq.org/p/download.html">download page</a> at <a href="minibloq.org">miniBloq.org</a> and download the installer from the link near the top of the page. <i>(Only Windows is supported at this time. We're working on extending support to other operating systems.)</i></p>
-
-Soon you'll be able to read here about downloading and installing the software for AERobot, calibrating the sensors and motors, and programming the robot. In the meantime, you can visit <a href="minibloq.org">miniBloq.org</a> for a head start; the software is all at the main download link you'll find there, soon to be supplemented by step-by-step instructions here.
-
-<p><b>To be continued!</b></p>
--->
-
+<li>The robot will start moving, with both motors spinning slowly. The goal of calibration is to adjust the motor speeds so that the robot moves as straight and as fast as possible on the given surface. To increase the speed of one of the motors, put your hand in front of the distance sensor on that side of the robot. The LED will blink to indicate that the command was received, and the motor on that side will speed up (tending to turn the robot toward the opposite direction). Continue to increase the motor speeds on both sides until the robot is moving as intended. This video demonstrates the procedure:</li></ol>
+<div style="text-align:center;">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yvKrCm4ouvA" frameborder="0" allowfullscreen></iframe>
 </div>
+<p>When you're satisfied with the robot's movement, press the power switch to turn it off. The current movement will be stored in the robot's memory, and those motor settings will be used the next time a program tells the robot to move forward. A good habit at this point is to plug the robot back in and load a new program (so that it doesn't start calibration again when you next turn it on, and force you to start over).</p>
+<p>If the motor speed is set too high, the robot's movement can become erratic, and it can actually slow down. If this happens, use the Clear button and start calibration over for that movement direction.</p>
+<p>Calibration for the other three kinds of movement works the same way. This video shows a few seconds of calibration for clockwise turning (notice how the rotation speed increases when the motor speed is adjusted):</p>
+<div style="text-align:center;">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XziMy4ZrZjM" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<h3 style="text-align:center;"><a id="robot_calibration" class="anchor" href="#robot_calibration" aria-hidden="true"><span class="octicon octicon-link"></span></a>Calibrating the line sensors<a name="calibrate_sensors" id="calibrate_sensors"></a></h3>
+
+<p>The sensors AERobot uses to detect a line drawn on the ground underneath it are also sensitive to the environment it's operating in -- the brightness values they detect depend on the amount of light in the room, and the reflectivity of the surface underneath -- and so they also need calibrating. Bright lights, especially sunlight, can saturate them; for best results, cover any windows in the room and turn down artificial lights.</p>
+
+<p>AERobot is best at following a black line on a white background, where the line is about the same thickness as the robot's USB plug. (<a href="https://github.com/AffordableEducationRobot/v1.0/tree/master/doc/pads">Here</a> are sample lines if you don't want to draw your own.) To calibrate the sensors, take the line you want the robot to follow, open the calibration interface as you would for calibrating the motors, and go through the following procedure:</p>
+<ol>
+<li>Connect the robot to the USB port.</li>
+<li>Press the <b>Line Clear</b> button. (Again, look for the success message, and try again as necessary if you don't see it on the first try.)</li>
+<li>Unplug the robot. The LED should light up red.</li>
+<li>Plug the robot back in, and press the <b>Line</b> button until you get the success message.</li>
+<li>Unplug the robot. If the LED isn't lit, press the power button.</li>
+<li>Place the robot on the surface, centered on the line. The LED will cycle through three states: red for a few seconds, off very briefly, and then green for a few seconds. Put the robot on the surface when the light is red; once the light is green, press the power button to turn the robot off. (The actual calibration happens during the instant while the light is off. Red means "about to calibrate, get the robot ready and don't touch it"; green means "calibration is complete, it's safe to turn the robot off now".) This video shows the procedure:</li></ol>
+<div style="text-align:center;">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oGCaK-V9U-g" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<h3 style="text-align:center;"><a id="programing_the_robot" class="anchor" href="#programing_the_robot" aria-hidden="true"><span class="octicon octicon-link"></span></a>Programming the robot<a name="program" id="program"></a></h3>
+
+<p>The main window in miniBloq provides a workspace where you can drag blocks from the Actions panel to create programs. To get started, here's how to create and run a simple first program that just has the robot turn counterclockwise indefinitely.</p>
+<p>From the Actions panel at the right side of the screen, click on the block with the robot icon (representing movement commands):</p>
+<p style="text-align:center;"><img src="images/actions_picker.png" alt="actions picker" width="157"></p>
+<p>A matching block appears as part of the program in the main workspace. The yellow block with the blue "Play" button on it indicates the start of the program; program flow will go downwards from there.</p>
+<p>The new movement block has a red triangle at its right edge, indicating that the statement is incomplete. Click on the red triangle to pop up a list of available actions, and click on the button for counterclockwise rotation:</p>
+<p style="text-align:center;"><img src="images/robot_picker.png" alt="robot picker" width="582"></p>
+<p>Now the triangle is green, indicating that the statement is complete. This is now a complete (if not very interesting) program.</p>
+<p>To send this program to the robot, plug it into the USB port, and click the Run button (the green arrow in a circle in the top row of icons) or press Control-U. A black message window will pop up on the bottom of the screen; if the robot was sucessfully programmed, you'll see something like this:</p>
+<p style="text-align:center;"><img src="images/minibloq_messages_ok.png" alt="minibloq messages ok" width="582"></p>
+<p>If you see red text instead, or any error message, try pressing the robot's reset button while keeping the robot plugged into the USB port, and click Run or press Control-U again. Sometimes this operation may take two or three tries.</p>
+<p>Once the message window indicates success, unplug the robot, flip it so the acrylic foot rests on the table and see how it moves. If it does not start to move, press its reset button.</p>
+
+<p>A good way to learn about using miniBloq is to play around with it -- all the blocks and buttons have mouse-over tooltips to explain what they do. Here are a few points worth noting:</p>
+<ul><li>You can drag blocks around to rearrange them within a program, and comment out specific blocks by right-clicking on them.</li>
+<li>Every time the robot runs a program, it first blinks its LED in blue three times.</li>
+<li>miniBloq automatically generates C code corresponding to the graphical program -- choose View -> Generated Code from the menu to show or hide it. This feature can provide a useful tool to help students make the transition from graphical to text-based programming. More advanced students can program the robot in C directly from that window.</li>
+<li>A number of example programs are provided within miniBloq from the File -> Examples menu. See also the <a href="activities.html">Activities</a> page on this site.</li>
+<li>More information about using miniBloq is available at its <a href="http://blog.minibloq.org/p/documentation.html">documentation page</a> online.</li>
+  
+<!-- </div> -->
     </section>
 
   

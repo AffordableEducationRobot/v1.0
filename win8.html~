@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Windows 8/10 Installation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Installation for Windows 8 or 10 (Continued)</h1>
+<!--      <h2 class="project-tagline">Affordable Education Robot</h2> -->
+      <a href="software.html" class="btn">Back to Software</a>
+    </section>
+
+    <section class="main-content">
+
+<p>Open the folder <b>win8</b> and run the <b>zadig_2.1.1.exe</b> program you'll find there. Answer "No" to the question about checking for updates.<p>
+<p>In the window that opens, choose <b>libusb-win32 (v1.2.6.0)</b> in the field to the right of the green arrow, and press the <b>Install Driver</b> button:</p>
+<p style="text-align:center;"><img src="images/win8b.png"></p>
+<p>A window should pop up saying "Installing Driver..." and then be replaced by one saying "The driver was installed successfully." Close that window and then the Zadig program.
+
+<p>At any time, you can check to be sure that your robot is recognized by the operating system by going to the Start menu and choosing <b>Computer Management</b>. In the left pane, click on <b>Device Manager</b>. In the center pane, under the <b>libusb (WinUSB) devices</b> category, you should see the <b>USBasp</b> entry, without any exclamation mark or yellow warning sign:</p>
+<p style="text-align:center;"><img src="images/win8c.png" alt="Device manager" width="796"></p>
+
+<p style="text-align:center;"><a href="software#drivers">Back to the software page...</a></p>
+
+    </section>
+
+  
+  </body>
+</html>
